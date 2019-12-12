@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $(dirname $0)
+./helpers/write-http-headers.sh
+./helpers/begin-document.sh "Printing..." 10 /terminal
+echo "
+<h1>$(./bash_queue/print_ticket.sh)</h1>
+"
+./helpers/end-document.sh

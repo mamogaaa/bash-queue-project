@@ -1,0 +1,5 @@
+#!/bin/bash
+cd $(dirname $0)
+message=$(./bash_queue/get_last_tts_message.sh)
+./helpers/write-http-headers.sh "audio/mpeg"
+./helpers/load-tts-output.sh "$message"

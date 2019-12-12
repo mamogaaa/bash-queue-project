@@ -1,0 +1,3 @@
+[submodule "scripts/bash_queue"]
+	path = scripts/bash_queue
+	url = https://github.com/nordikafiles/bash_queue
