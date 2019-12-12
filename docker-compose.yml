@@ -1,0 +1,9 @@
+version: "2"
+services:
+  server:
+    image: hypoport/httpd-cgi
+    volumes:
+     - ./scripts:/usr/local/apache2/cgi-bin
+     - ./html:/usr/local/apache2/htdocs
+    ports:
+      - "9191:80"
